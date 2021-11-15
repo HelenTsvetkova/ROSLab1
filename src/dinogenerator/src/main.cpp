@@ -64,8 +64,10 @@ int main(int argc, char** argv) {
             "\nrosservice call /generate_dino_name # (+ TAB)\n"
             "Then enter the word to generate dino species.");
 
-    publisher = nodeService.advertise<std_msgs::String>("DinoSpecies", 10);
-    subscriber = nodeService.subscribe("DinoSpecies", 10, generateDinoFact);
+    std::string topicName;
+    ros::param::get("/topicName", topicName);
+    publisher = nodeService.advertise<std_msgs::String>(topicName, 10);
+    subscriber = nodeService.subscribe(topicName, 10, generateDinoFact);
 
     ros::spin();
 }

@@ -1,4 +1,0 @@
-<launch>
-<node pkg="dinogenerator" type="dinoserver" name="dinoserver"/>
-<node pkg="rqt_graph" type="rqt_graph" name="rqt_graph"/>
-</launch>
