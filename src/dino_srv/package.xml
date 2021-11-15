@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>dinosrv</name>
+  <name>dino_srv</name>
   <version>0.0.0</version>
-  <description>The dinosrv package</description>
+  <description>The dino_srv package</description>
 
   <maintainer email="alenasts00@gmail.com">helen</maintainer>
 

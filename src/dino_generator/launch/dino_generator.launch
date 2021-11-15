@@ -1,0 +1,4 @@
+<launch>
+<param name="topic_name" value="dino_species"/>
+<node pkg="dino_generator" type="dino_server" name="dino_server" output="screen"/>
+</launch>

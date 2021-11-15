@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(dinogenerator)
+project(dino_generator)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -33,15 +33,15 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(dinoserver src/main.cpp)
+add_executable(dino_server src/main.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(dinoserver dinosrv_generate_messages_cpp)
+add_dependencies(dino_server dinosrv_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(
-    dinoserver
+    dino_server
   ${catkin_LIBRARIES}
 )
 

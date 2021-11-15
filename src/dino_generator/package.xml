@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>dinogenerator</name>
+  <name>dino_generator</name>
   <version>0.0.0</version>
-  <description>The dinogenerator package</description>
+  <description>The dino_generator package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="alenasts00@gmail.com">helen</maintainer>
