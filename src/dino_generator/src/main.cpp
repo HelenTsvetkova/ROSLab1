@@ -1,6 +1,6 @@
 #include <iostream>
 #include "ros/ros.h"
-#include "dinosrv/dinoName.h"
+#include "dino_srv/dino_name.h"
 #include "std_msgs/String.h"
 
 const int NUM_SUFFIXIES = 10;
@@ -24,7 +24,7 @@ std::string g_facts[NUM_FACTS] =
     "died from cringe"
 };
 
-bool generateDinoName(dinosrv::dinoName::Request &req, dinosrv::dinoName::Response &res)
+bool generateDinoName(dino_srv::dino_name::Request &req, dino_srv::dino_name::Response &res)
 {
 
     // check the word and capitalize the first letter
