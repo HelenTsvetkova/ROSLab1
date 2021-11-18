@@ -9,7 +9,7 @@ project(dino_generator)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  dinosrv
+  dino_srv
 )
 
 ###################################
@@ -37,7 +37,7 @@ add_executable(dino_server src/main.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(dino_server dinosrv_generate_messages_cpp)
+add_dependencies(dino_server dino_srv_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(
